@@ -1,0 +1,17 @@
+//BUTTON DİSSAPPEAR
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 10px;
+  }
+  header {
+    padding: 0 5rem;
+    .navigation {
+      &__button-container {
+        display: none;
+      }
+    }
+  }
+}
+
+//BUTTON DİSSAPPEAR
