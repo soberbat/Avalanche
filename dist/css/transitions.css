@@ -1,0 +1,8 @@
+.news__image-container {
+  transition: all ease-in 0.4s;
+  background-color: blanchedalmond;
+}
+
+.news__image-container.width {
+  transition: all ease-in 0.4s;
+}/*# sourceMappingURL=transitions.css.map */

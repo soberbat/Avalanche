@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./transitions.scss";
 
 * {
   box-sizing: border-box;
@@ -253,7 +254,7 @@ header {
 .news {
   padding: 10rem 10rem;
   color: black;
-  z-index: -5;
+  z-index: 10;
   position: relative;
 
   .purple__firstsec {
@@ -289,6 +290,26 @@ header {
     }
   }
 }
+
+.news__image-con {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.news__image-container {
+  width: 20%;
+  height: 70vh;
+  background-image: url(/img/executium-EM3BTKStjiA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.width {
+  width: 90%;
+}
+
 //NEWS SECTİON
 
 //MEDİA QUERİES

@@ -1,3 +1,16 @@
+.news__image-container {
+  transition: all ease-in 0.1s;
+  background-color: blanchedalmond;
+}
+
+.news__image-container.width {
+  transition: all ease-in 0.1s;
+}
+
+.width {
+  width: 90%;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -217,7 +230,7 @@ header .navigation__button-container {
 .news {
   padding: 10rem 10rem;
   color: black;
-  z-index: -5;
+  z-index: 10;
   position: relative;
 }
 .news .purple__firstsec .upper-text {
@@ -247,6 +260,25 @@ header .navigation__button-container {
   color: black;
   padding: 1rem 0rem;
   margin-bottom: 8rem;
+}
+
+.news__image-con {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.news__image-container {
+  width: 20%;
+  height: 70vh;
+  background-image: url(/img/executium-EM3BTKStjiA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.width {
+  width: 90%;
 }
 
 @media screen and (max-width: 950px) {

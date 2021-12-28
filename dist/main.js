@@ -1,4 +1,5 @@
 const header = document.querySelector(".header");
+const imageContainers = document.querySelectorAll(".news__image-container");
 
 document.addEventListener("scroll", (e) => {
   lastKnownScrollPosition = window.scrollY;
@@ -8,4 +9,21 @@ document.addEventListener("scroll", (e) => {
   } else {
     header.style.marginTop = "1rem";
   }
+});
+
+imageContainers.forEach((container) => {
+  container.addEventListener("click", function (e) {
+    if (e.target === container) {
+      container.classList.add("width");
+      let allSiblings = [...container.parentElement.children].filter(
+        (child) => child !== container
+      );
+
+      allSiblings.forEach((sibling) => {
+        if (sibling.classList.contains("width")) {
+          sibling.classList.remove("width");
+        }
+      });
+    }
+  });
 });
