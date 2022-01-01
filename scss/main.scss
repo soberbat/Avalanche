@@ -26,7 +26,7 @@ header {
   top: 0;
   left: 0;
   background-color: white;
-  padding: 1rem 2rem;
+  padding: 0.2rem 2rem;
   margin-top: 1rem;
   font-weight: 400;
 
@@ -53,9 +53,9 @@ header {
     &__button-container {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.3rem;
       background-color: $black;
-      padding: 1rem 1rem;
+      padding: 0.8rem 1rem;
       color: white;
     }
   }
@@ -252,7 +252,7 @@ header {
 //NEWS SECTİON
 
 .news {
-  padding: 10rem 10rem;
+  padding: 10rem 15rem;
   color: black;
   z-index: 10;
   position: relative;
@@ -286,7 +286,7 @@ header {
       font-weight: 400;
       color: black;
       padding: 1rem 0rem;
-      margin-bottom: 8rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -294,7 +294,6 @@ header {
 .news__image-con {
   display: flex;
   gap: 1rem;
-  border: 1px solid black;
   justify-content: space-between;
 }
 
@@ -304,13 +303,243 @@ header {
   background-image: url(/img/executium-EM3BTKStjiA-unsplash.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
+  margin-bottom: 4rem;
 }
+.news-box {
+  position: absolute;
+  bottom: -10%;
+  border: 1px solid black;
+  left: 4rem;
+  padding: 2rem;
+  width: 18rem;
+  background-color: white;
+  display: none;
 
+  span {
+    font-weight: 800;
+  }
+}
 .width {
   width: 90%;
 }
 
+//WHOS BUİLDİNG ON AVALANCHE
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+//WHOS BUİLDİNG ON AVALANCHE
+
 //NEWS SECTİON
+
+//BLACK BACKGROUNDED SECTİON
+.black {
+  padding: 5rem 15rem;
+  background-color: $black;
+  &__heading {
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+
+    p {
+      font-size: 1.5rem;
+      color: rgb(196, 191, 191);
+      font-weight: 300;
+    }
+    .upper-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid white;
+      h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .img-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    img {
+      width: 90%;
+    }
+    .text-container {
+      margin-left: 5rem;
+      padding: 2rem;
+      color: white;
+
+      span {
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+}
+//BLACK BACKGROUNDED SECTİON
+
+//WHİTE BACKGROUN SECTİON
+
+.white {
+  padding: 5rem 15rem;
+
+  &__heading {
+    color: $black;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+
+    p {
+      font-size: 1.5rem;
+      color: $gray;
+      font-weight: 300;
+      margin-top: 2rem;
+    }
+    .upper-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid black;
+      h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .text {
+    text-align: left;
+    margin-top: 10rem;
+    h3 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.3rem;
+      color: $gray;
+      font-weight: 370;
+    }
+  }
+
+  .text-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-weight: 300;
+
+    .list {
+      ul {
+        margin-left: -0.9rem;
+        display: flex;
+        gap: 0.6rem;
+        flex-direction: column;
+      }
+    }
+  }
+  .cta {
+    margin-top: 10rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+
+    > * {
+      cursor: pointer;
+      :hover {
+        color: brown;
+      }
+    }
+  }
+
+  .images-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    color: white;
+
+    :nth-of-type(2) {
+      background-color: $yellow;
+      color: $black;
+
+      img {
+        width: 40%;
+      }
+    }
+
+    :nth-of-type(3) {
+      background-color: $black;
+
+      img {
+        width: 40%;
+      }
+    }
+
+    :nth-of-type(4) {
+      background-color: white;
+      border: 0.5px solid black;
+      color: $black;
+
+      img {
+        width: 40%;
+      }
+    }
+
+    div {
+      width: 500px;
+      height: 500px;
+      background-color: $purple;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 3;
+
+      img {
+        width: 20%;
+      }
+
+      .text-part {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        left: 5%;
+        bottom: 6%;
+        text-align: left;
+        padding: 1rem;
+
+        h4 {
+          font-size: 3rem;
+          margin: 0 0;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+//WHİTE BACKGROUN SECTİON
 
 //MEDİA QUERİES
 
@@ -385,6 +614,141 @@ header {
   }
   //   CARD
   //   PURPLE BACKGROUND STYLES
+
+  //NEWS
+
+  .news {
+    padding: 5rem 2rem;
+
+    .purple__firstsec {
+      .upper-text {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  //NEWS
+
+  .black {
+    padding: 5rem 2rem;
+    &__heading {
+      margin-bottom: 5rem;
+      .upper-text {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+    .img-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+
+      img {
+        width: 90%;
+      }
+      .text-container {
+        margin-left: 0rem;
+
+        padding: 2rem;
+
+        span {
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 1.2rem;
+          margin-bottom: 4rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+  //BLACK
+  //WHİTE BACKGROUN SECTİON
+
+  .white {
+    padding: 5rem 2rem;
+
+    &__heading {
+      color: $black;
+      margin-top: 4rem;
+      margin-bottom: 5rem;
+
+      p {
+        font-size: 1.5rem;
+        color: $gray;
+        font-weight: 300;
+        margin-top: 2rem;
+      }
+      .upper-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        h1 {
+          margin-bottom: 1.5rem;
+          font-size: 2.5rem;
+        }
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .text {
+      text-align: left;
+      margin-top: 10rem;
+      h3 {
+        font-size: 5rem;
+      }
+      p {
+        font-size: 1.3rem;
+        color: $gray;
+        font-weight: 370;
+      }
+    }
+
+    .text-img {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 3rem;
+      font-weight: 300;
+      gap: 3rem;
+
+      .images {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        img {
+          width: 60%;
+        }
+      }
+
+      .list {
+        ul {
+          font-size: 1.4rem;
+          margin-left: -0.9rem;
+          display: flex;
+          gap: 0.6rem;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  //WHİTE BACKGROUN SECTİON
 }
 // MEDİA QUERY
 

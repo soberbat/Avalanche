@@ -6,3 +6,7 @@
 .news__image-container.width {
   transition: all ease-in 0.4s;
 }
+
+.news-box.show {
+  display: inline-block;
+}
