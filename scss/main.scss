@@ -391,7 +391,7 @@ header {
 //WHİTE BACKGROUN SECTİON
 
 .white {
-  padding: 5rem 15rem;
+  padding: 5rem 12rem;
 
   &__heading {
     color: $black;
@@ -448,10 +448,13 @@ header {
       }
     }
   }
+
+  //CTA WİTH ARROWS
+
   .cta {
     margin-top: 10rem;
     display: flex;
-    gap: 5rem;
+    gap: 15rem;
     align-items: center;
     justify-content: center;
 
@@ -463,14 +466,19 @@ header {
     }
   }
 
+  //CTA WİTH ARROWS
+
+  // FOUR PHOTOS
+
   .images-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     margin-top: 5rem;
     color: white;
+    margin-bottom: 10rem;
 
     :nth-of-type(2) {
       background-color: $yellow;
@@ -495,12 +503,12 @@ header {
       color: $black;
 
       img {
-        width: 40%;
+        width: 35%;
       }
     }
 
     div {
-      width: 500px;
+      width: 600px;
       height: 500px;
       background-color: $purple;
       display: flex;
@@ -537,9 +545,123 @@ header {
       }
     }
   }
+  //FOUR PHOTOS
+
+  //JOİN THE AVALANCHE
+  .join-community {
+    margin-top: 5rem;
+    .text-section {
+      text-align: center;
+      margin-bottom: 5rem;
+
+      h1 {
+        font-size: 3.4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      span {
+        color: $gray;
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 0 5rem 3rem 5rem;
+      flex-wrap: wrap;
+
+      border-bottom: 2.6px solid;
+
+      font-weight: 800;
+      font-size: 1.3rem;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        span {
+          font-weight: 800;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  //JOİN THE AVALANCHE
 }
 
-//WHİTE BACKGROUN SECTİON
+//FOOTER
+.footer {
+  padding-top: 2rem;
+  border-top: solid 2px $gray;
+  padding-left: 15rem;
+  padding-right: 15rem;
+
+  .logo-links {
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      padding: 1rem;
+      justify-self: end;
+      align-self: bottom;
+      width: 15%;
+      margin-top: 2rem;
+      margin-right: 4rem;
+    }
+
+    div {
+      width: 100%;
+    }
+    border-bottom: 1px solid rgb(173, 164, 164);
+    padding-bottom: 4rem;
+  }
+
+  .line-container {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+
+    p {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1.2rem;
+    }
+    span {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
+.links-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  ul {
+    color: rgb(58, 57, 57);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-left: 0rem;
+    h1 {
+      margin-bottom: 1.2rem;
+      font-weight: 800;
+      color: rgb(75, 75, 75);
+    }
+  }
+}
+
+//FOOTER
+
+//FOOTER
 
 //MEDİA QUERİES
 
@@ -746,9 +868,62 @@ header {
         }
       }
     }
+
+    .cta {
+      gap: 5rem;
+    }
   }
 
   //WHİTE BACKGROUN SECTİON
+
+  //FOOTER
+  .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    .logo-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-items: center;
+
+      img {
+        justify-self: center;
+        align-self: center;
+        width: 30%;
+        margin: 0;
+      }
+
+      border-bottom: 1px solid rgb(173, 164, 164);
+      padding-bottom: 4rem;
+    }
+  }
+
+  .links-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    ul {
+      color: rgb(58, 57, 57);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-weight: 300;
+      font-size: 0.8rem;
+      margin-left: 0rem;
+      h1 {
+        margin-bottom: 1.2rem;
+        font-weight: 800;
+        color: rgb(75, 75, 75);
+      }
+    }
+  }
+
+  //FOOTER
 }
 // MEDİA QUERY
 
