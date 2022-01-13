@@ -11,12 +11,10 @@
   display: inline-block;
 }
 
-* {
+*,
+html {
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
@@ -69,6 +67,7 @@ header .navigation__button-container {
   flex-direction: row;
   position: relative;
   padding: 0 5rem;
+  padding-top: 5rem;
 }
 .welcome__text-container {
   line-height: 10rem;
@@ -104,7 +103,7 @@ header .navigation__button-container {
   margin-bottom: 10rem;
 }
 .welcome__image-container img {
-  width: 32rem;
+  width: 23rem;
 }
 .welcome__container {
   position: absolute;
@@ -322,6 +321,7 @@ header .navigation__button-container {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid white;
+  margin-bottom: 2rem;
 }
 .black__heading .upper-text h1 {
   margin-bottom: 1.5rem;
@@ -334,7 +334,7 @@ header .navigation__button-container {
   margin-bottom: 5rem;
 }
 .black .img-text img {
-  width: 90%;
+  width: 50%;
 }
 .black .img-text .text-container {
   margin-left: 5rem;
@@ -344,6 +344,7 @@ header .navigation__button-container {
 .black .img-text .text-container span {
   font-weight: 800;
   font-size: 1.5rem;
+  margin-bottom: 4rem;
 }
 .black .img-text .text-container p {
   font-weight: 300;
@@ -396,7 +397,7 @@ header .navigation__button-container {
   font-weight: 300;
 }
 .white .text-img .list ul {
-  margin-left: -0.9rem;
+  margin-left: 1rem;
   display: flex;
   gap: 0.6rem;
   flex-direction: column;
@@ -576,6 +577,13 @@ header .navigation__button-container {
 @media screen and (max-width: 950px) {
   html {
     font-size: 14px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
   }
 
   header {
@@ -602,15 +610,19 @@ header .navigation__button-container {
   .welcome__container {
     position: absolute;
     bottom: -5rem;
+    left: 3rem;
     width: 80%;
   }
   .welcome__container-text {
     background-color: #151515;
-    padding: 1rem 2rem;
+    padding: 1rem 0.7rem;
+    font-size: 0.8rem;
   }
 
   .purple {
     padding: 4rem 3rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
   }
   .purple .purple-box-section {
     flex-direction: column;
@@ -618,6 +630,7 @@ header .navigation__button-container {
     width: 80%;
     text-align: left;
     right: 10%;
+    padding: 2rem 1rem;
   }
   .purple .purple-box-section .purple-box-text {
     font-size: 2rem;
@@ -635,6 +648,7 @@ header .navigation__button-container {
 
   .news {
     padding: 5rem 2rem;
+    padding-top: 10rem;
   }
   .news .purple__firstsec .upper-text h1 {
     font-size: 2rem;
@@ -727,15 +741,15 @@ header .navigation__button-container {
   }
   .white .text-img .images {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
   }
   .white .text-img .images img {
-    width: 60%;
+    width: 40%;
   }
   .white .text-img .list ul {
     font-size: 1.4rem;
-    margin-left: -0.9rem;
+    margin-left: 1.4rem;
     display: flex;
     gap: 0.6rem;
     flex-direction: column;
